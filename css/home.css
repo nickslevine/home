@@ -1,0 +1,46 @@
+body {
+            -user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.work, a, a:visited, a:hover, a:active {
+    font-family: Arial;
+    font-size: 12px;
+    color: black;
+    letter-spacing: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.header {
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 40px;
+}
+.section {
+    font-family: Arial;
+    font-size: 12px;
+    color: black;
+    letter-spacing: 4px;
+    text-decoration: none;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.icon {
+    margin-top: 50px;
+}
+.space {
+    letter-spacing: 1px;
+}
