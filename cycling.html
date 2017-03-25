@@ -1,0 +1,121 @@
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <title>Cycling</title>
+    <style>
+        .container {
+            display: flex; 
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            
+        }
+        .title {
+            font-family: Arial;
+            font-size: 12px;
+            color: black;
+            letter-spacing: 4px;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: 120px;
+            padding: 10px;
+            /*height: 60px;*/
+            /*padding-bottom: 0px;
+            padding-top: 0px;*/
+            font: 8px Arial;
+            background: white;
+            border: 1px dashed black;
+            border-radius: 0px;
+            pointer-events: none;
+            top: 0;
+            right: 0;
+            letter-spacing: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: cener;
+            justify-content: center;
+            line-height: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="title"> USA GDP, 1947-2015 </div>-->
+    <div class="container"> </div>
+    <script>
+        var dataobj;
+        var url = "https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json";
+        var dataset = [];
+        d3.json(url, function(err, data){
+            console.log(data);
+            var h = 100;
+            var off = 100;
+            var tool = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+            var svg = d3.select(".container").append("svg").attr("width", 700).attr("height", 600);
+
+            var yScale = d3.scaleLinear()
+                     .domain([2390, 2210])
+                     .range([50, 550]);
+
+            svg.selectAll("circle")
+                .data(data)
+                .enter().append("circle")
+                .attr("cx", function(d,i) {
+                    return ((35-d["Place"]) * 15) + 150;
+                })
+                .attr("cy", function(d){return yScale(d["Seconds"])})
+                .attr("r", 5)
+                .attr("fill", function(d){
+                    if (d["Doping"] == '') {
+                        return "black";
+                    } else {
+                        return "white";
+                    }
+                })
+                .attr("stroke", "black")
+                .attr("stroke-width", .75)
+                .on("mouseover", function(d) {
+                    tool.transition()
+                        .duration(100)
+                        .style("opacity", .9);
+                    tool.html(d["Name"] + " (" + d["Nationality"]+ ")<br>Time:" + d["Time"]+" (" + d["Year"] + ")<br>"+d["Doping"])
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                    })
+                .on("mouseout", function(d){
+                    tool.transition().duration(200).style("opacity", 0);
+                });
+
+            svg.selectAll("text")
+                .data(data)
+                .enter().append("text")
+                .attr("x", 0)
+                .attr("y", function(d){return yScale(d["Seconds"])})
+                .attr("font-family", "Arial")
+                .attr("font-size", "10px")
+                .attr("letter-spacing", "4px")
+                .text(function(d, i) {
+                        if ((i+1)%5==0) {
+                        return d["Time"];
+                        }
+                    })
+                
+            svg.append("text")
+                .text("Cycling Up Alpe d'Huez")
+                .attr("class", "title")
+                .attr("x", 457)
+                .attr("y", 10);
+
+             svg.append("text")
+                .text("Record Times & Doping Allegations")
+                .attr("class", "title")
+                .attr("x",350)
+                .attr("y", 25);
+            });
+    </script>    
+</body>
+
+<!--help w/ tooltips from here: https://bl.ocks.org/d3noob/257c360b3650b9f0a52dd8257d7a2d73-->

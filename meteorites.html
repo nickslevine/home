@@ -1,0 +1,160 @@
+<head>
+    <title>Meteorite Landings</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/2.2.0/topojson.min.js"></script>
+    <style>
+        body {
+            -user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        .container {
+            display: flex; 
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .title {
+            font-family: Arial;
+            font-size: 12px;
+            color: black;
+            letter-spacing: 4px;
+        }
+        .tooltip {
+            letter-spacing: 4px;
+            position: absolute;
+            text-align: center;
+            width: 80px;
+            padding: 10px;
+            /*height: 60px;*/
+            /*padding-bottom: 0px;
+            padding-top: 0px;*/
+            font: 10px Arial;
+            background: white;
+            border: 1px solid black;
+            border-radius: 0px;
+            pointer-events: none;
+            top: 0;
+            right: 0;
+            /*letter-spacing: 4px;*/
+            display: flex;
+            flex-direction: column;
+            align-items: cener;
+            justify-content: center;
+            line-height: 17px;
+        }
+        .land {
+            fill: black;
+            stroke: black;
+            stroke-width: 1px;
+        }
+        .border{
+            stroke: white;
+            stroke-width: .2px;
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> </div>
+    <script>
+       
+        let url = "https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json";
+        let dataset = [];
+        d3.json(url, function(err, data){
+            console.log(data);
+            let dataset = data["features"];
+          
+            let tool = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+
+            let svg = d3.select(".container").append("svg").attr("width", 1000).attr("height", 600);
+
+            svg.append("text")
+                .text("Meteorite Landings")
+                .attr("class", "title")
+                .attr("x", 417)
+                .attr("y", 10);
+
+            let map = svg.append("g");
+            let circs = svg.append("g");
+            // let years = [];
+
+            let projection = d3.geoEquirectangular()
+                .translate([500, 270]);
+            let path = d3.geoPath(projection);
+
+            let rScale = d3.scaleLinear()
+                     .domain([0, 23000000])
+                     .range([1, 20]);
+
+
+            d3.json("https://gist.githubusercontent.com/mbostock/4090846/raw/d534aba169207548a8a3d670c9c2cc719ff05c47/world-110m.json", function(error, data) {
+                map.append("path")
+                    .datum(topojson.feature(data, data.objects.land))
+                    .attr("class", "land")
+                    .attr("d", path);
+                map.append("path")
+                    .datum(topojson.feature(data, data.objects.countries))
+                    .attr("class", "border")
+                    .attr("d", path);
+                });
+
+            circs.selectAll("circle")
+                .data(dataset)
+                .enter().append("circle")
+                .attr("cx", function(d){
+                    if (d.properties.year) {
+                        // years.push(parseInt(d.properties.year.substr(0,4)));
+                    }
+                    if (d.geometry) {
+                        return projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[0];}
+                    else {return 100000}
+                    })
+                .attr("cy", function(d){
+                    if (d.geometry) {
+                        return projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[1];}
+                    else {return 100000}
+                    })
+                .attr("r", function(d){
+                    if (parseInt(d.properties.mass)) {
+                        return rScale(parseInt(d.properties.mass));
+                    } else {
+                        return 1;
+                    }
+                })
+                .style("fill", "#DE6449")
+                .on("mouseover", function(d){
+                    tool.transition()
+                        .duration(100)
+                        .style("opacity", .9);
+                    if (d.properties.mass == null) {
+                        massString = "";
+                    } else if (d.properties.mass > 1000) {
+                        massString = d.properties.mass / 1000 + "kg";
+                    } else {
+                        massString = d.properties.mass + "g";
+                    }
+                    tool.html(d.properties.name + " (" + d.properties.year.substr(0,4) + ")<br>" + massString)
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                    })
+                .on("mouseout", function(d){
+                    tool.transition().duration(200).style("opacity", 0);
+                });
+            // let newSet = [...new Set(years)];
+            // let array = [...newSet];
+            // console.log(array.sort());
+            });
+    </script>    
+</body>
+
+<!--
+with help from:
+https://bl.ocks.org/Fil/cafad70aea7ec49d787e123b1026db06
+http://bl.ocks.org/abenrob/c4ac3d581a7b16ff5f2f
+http://bl.ocks.org/michellechandra/0b2ce4923dc9b5809922
+-->

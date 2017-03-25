@@ -1,0 +1,154 @@
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <title>Global Temperature Anomalies</title>
+    <style>
+        .container {
+            display: flex; 
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            
+        }
+        .title {
+            font-family: Arial;
+            font-size: 12px;
+            color: black;
+            letter-spacing: 4px;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: 80px;
+            padding: 10px;
+            /*height: 60px;*/
+            /*padding-bottom: 0px;
+            padding-top: 0px;*/
+            font: 12px Arial;
+            background: white;
+            border: 1px solid black;
+            border-radius: 0px;
+            pointer-events: none;
+            top: 0;
+            right: 0;
+            /*letter-spacing: 4px;*/
+            display: flex;
+            flex-direction: column;
+            align-items: cener;
+            justify-content: center;
+            line-height: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> </div>
+    <script>
+        function getMonth(n) {
+            switch(n) {
+                case 1:
+                    return 'J';
+                    break;
+                case 2:
+                    return 'F';
+                    break;
+                case 3:
+                    return 'M';
+                    break;
+                case 4:
+                    return 'A';
+                    break;
+                case 5:
+                    return 'M';
+                    break;
+                case 6:
+                    return 'J';
+                    break;
+                case 7:
+                    return 'J';
+                    break;
+                case 8:
+                    return 'A';
+                    break;
+                case 9:
+                    return 'S';
+                    break;
+                case 10:
+                    return 'O';
+                    break;
+                case 11:
+                    return 'N';
+                    break;
+                case 12:
+                    return 'D';
+                    break;
+            }
+        }
+        var dataobj;
+        var url = "https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json";
+        var dataset = [];
+        d3.json(url, function(err, data){
+            console.log(data);
+            dataset = data["monthlyVariance"];
+            var colorScale = d3.scaleLinear()
+                .domain(d3.extent(dataset, function(d){
+                    return d["variance"];
+                }))
+                .interpolate(d3.interpolateCubehelix)
+                .range([d3.rgb("#0000ff"), d3.rgb('#ff0000')]);
+          
+            var tool = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+            var svg = d3.select(".container").append("svg").attr("width", 800).attr("height", 600);
+
+
+            svg.selectAll("rect")
+                .data(dataset)
+                .enter().append("rect")
+                .attr("height", 20)
+                .attr("width", 3)
+                .attr("x", function(d,i) {
+                    return (d["year"]-1753)*3 + 12;
+                })
+                .attr("y", function(d){
+                    return (d["month"])*20 + 10;
+                })
+                .attr("fill", function(d){
+                    return colorScale(d["variance"]);
+                })
+                .on("mouseover", function(d) {
+                    tool.transition()
+                        .duration(100)
+                        .style("opacity", .9);
+                    tool.html(d["month"] + " / " + d["year"] + "<br> Temp: " + (d["variance"]+8.66).toFixed(1)+"C" + "<br>" + "Var.: " + d["variance"] + " C")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                    })
+                .on("mouseout", function(d){
+                    tool.transition().duration(200).style("opacity", 0);
+                });
+
+            svg.selectAll("text")
+                .data(dataset)
+                .enter().append("text")
+                .attr("x", 0)
+                .attr("y", function(d){
+                    return (d["month"]) * 20 + 21;})
+                .attr("font-family", "Arial")
+                .attr("font-size", "10px")
+                .text(function(d) {
+                    if (d["year"] == 1753) {
+                        return getMonth(d["month"])};
+                    });
+                
+            svg.append("text")
+                .text("Global Temperature Anomalies, 1753-2015")
+                .attr("class", "title")
+                .attr("x", 417)
+                .attr("y", 10);
+
+            });
+    </script>    
+</body>
+
+<!--help with color scale here: http://bl.ocks.org/jfreyre/b1882159636cc9e1283a-->

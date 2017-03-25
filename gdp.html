@@ -1,0 +1,118 @@
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <title>US GDP</title>
+    <style>
+        .container {
+            display: flex; 
+            flex-direction: row;
+            /*position: absolute;*/
+            /*bottom: 200px;*/
+            justify-content: center;
+            /*padding-left: 100px;*/
+            align-items: center;
+            height: 100%;
+        }
+        .title {
+            font-family: Arial;
+            font-size: 12px;
+            color: black;
+            letter-spacing: 4px;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: 120px;
+            height: 32px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            font: 8px Arial;
+            background: white;
+            border: 1px dashed black;
+            border-radius: 0px;
+            pointer-events: none;
+            top: 0;
+            right: 0;
+            letter-spacing: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: cener;
+            justify-content: center;
+            line-height: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="title"> USA GDP, 1947-2015 </div>-->
+    <div class="container"> </div>
+    <script>
+        var dataobj;
+        var url = "https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json";
+        var dataset = [];
+        d3.json(url, function(err, data){
+            dataset = data.data;
+            var h = 100;
+            var off = 100;
+            var tool = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+            var svg = d3.select(".container").append("svg").attr("width", 600).attr("height", 300);
+
+            svg.selectAll("rect")
+                .data(dataset)
+                .enter().append("rect")
+                .attr("x", function(d,i) {
+                    return (i * 2) + 25;
+                })
+                .attr("y", function(d){return h-((d[1]/18640.7)*100)+200})
+                .attr("width", .5)
+                .attr("height", function(d){return ((d[1]/18640.7)*100)})
+                .on("mouseover", function(d) {
+                    tool.transition()
+                        .duration(0)
+                        .style("opacity", .9);
+                    tool.html("$" + Math.floor(d[1]) + " billion" + "<br>" + d[0][5] + d[0][6] + "/" + d[0].substr(0,4))
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                    })
+                .on("mouseout", function(d){
+                    tool.transition()
+                        .duration(0)
+                        .style("opacity", 0);
+                });
+            svg.selectAll("text")
+                .data(dataset)
+                .enter().append("text")
+                .attr("class", "label")
+                .attr("x", function(d,i) {
+                    return (i * 2) + 25;
+                })
+                .attr("y", function(d){return h-((d[1]/18640.7)*100)-20+200})
+                .attr("font-family", "Arial")
+                .attr("font-size", "10px")
+                .attr("letter-spacing", "4px")
+                .text(function(d) {
+                    if (d[0][3]==0 && d[0][6]==1) {
+                        console.log(d[0]);
+                        return d[0].substr(0,4);
+                    }
+                });
+
+            svg.selectAll(".label")
+                .on("mouseover", function(d) {
+                    tool.transition().duration(500).style("opacity", 0);
+                });
+                
+
+            svg.append("text")
+                // .attr("class", "title")
+                .text("USA GDP, 1947-2015")
+                .attr("class", "title")
+                .attr("x", 20)
+                .attr("y", 10);
+            });
+            //function(d){((d[1]/18640.7)*100)}
+            // help w/ tooltips from here: https://bl.ocks.org/d3noob/257c360b3650b9f0a52dd8257d7a2d73
+    </script>    
+</body>
+
+
