@@ -1,0 +1,39 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="css/dataviz.css">
+  <title>Pokemon</title>
+</head>
+<body>
+  <div class="container">
+  <div id="chartDiv"></div>
+  <div class="choice">
+    <select name="x-axis" id="x-axis">
+      <option value="title">X-Axis</option>
+      <option value="weight">Weight</option>
+      <option value="height">Height</option>
+      <option value="base_experience">Exp</option>
+      <option value="base_hp">HP</option>
+      <option value="base_speed">Speed</option>    
+      <option value="base_attack">Attack</option>
+      <option value="base_defense">Def</option>
+      <option value="base_special_attack">Sp Att</option>
+      <option value="base_special_defense">Sp Def</option>
+    </select>
+    <select name="y-axis" id="y-axis">
+      <option value="title">Y-Axis</option>
+      <option value="weight">Weight</option>
+      <option value="height">Height</option>
+      <option value="base_experience">Exp</option>
+      <option value="base_hp">HP</option>
+      <option value="base_speed">Speed</option>    
+      <option value="base_attack">Att</option>
+      <option value="base_defense">Def</option>
+      <option value="base_special_attack">Sp Att</option>
+      <option value="base_special_defense">Sp Def</option>
+    </select>
+    <button onclick="user_chart()">Go</button>
+  </div>
+  </div>
+  <script src="js/d3.min.js"></script>
+  <script src="js/lodash.min.js"></script>
+  <script src="js/pokegraph.js"></script>
+</body>

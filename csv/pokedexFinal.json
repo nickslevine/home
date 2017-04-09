@@ -1,0 +1,2469 @@
+{
+  "bulbasaur": {
+    "number": 1,
+    "height": 7,
+    "weight": 69,
+    "base_experience": 64,
+    "base_speed": 45,
+    "base_special_defense": 65,
+    "base_special_attack": 65,
+    "base_defense": 49,
+    "base_attack": 49,
+    "base_hp": 45,
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "bulbasaur"
+  },
+  "ivysaur": {
+    "number": 2,
+    "height": 10,
+    "weight": 130,
+    "base_experience": 142,
+    "base_speed": 60,
+    "base_special_defense": 80,
+    "base_special_attack": 80,
+    "base_defense": 63,
+    "base_attack": 62,
+    "base_hp": 60,
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "ivysaur"
+  },
+  "venusaur": {
+    "number": 3,
+    "height": 20,
+    "weight": 1000,
+    "base_experience": 236,
+    "base_speed": 80,
+    "base_special_defense": 100,
+    "base_special_attack": 100,
+    "base_defense": 83,
+    "base_attack": 82,
+    "base_hp": 80,
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "venusaur"
+  },
+  "charmander": {
+    "number": 4,
+    "height": 6,
+    "weight": 85,
+    "base_experience": 62,
+    "base_speed": 65,
+    "base_special_defense": 50,
+    "base_special_attack": 60,
+    "base_defense": 43,
+    "base_attack": 52,
+    "base_hp": 39,
+    "types": [
+      "fire"
+    ],
+    "name": "charmander"
+  },
+  "charmeleon": {
+    "number": 5,
+    "height": 11,
+    "weight": 190,
+    "base_experience": 142,
+    "base_speed": 80,
+    "base_special_defense": 65,
+    "base_special_attack": 80,
+    "base_defense": 58,
+    "base_attack": 64,
+    "base_hp": 58,
+    "types": [
+      "fire"
+    ],
+    "name": "charmeleon"
+  },
+  "charizard": {
+    "number": 6,
+    "height": 17,
+    "weight": 905,
+    "base_experience": 240,
+    "base_speed": 100,
+    "base_special_defense": 85,
+    "base_special_attack": 109,
+    "base_defense": 78,
+    "base_attack": 84,
+    "base_hp": 78,
+    "types": [
+      "flying",
+      "fire"
+    ],
+    "name": "charizard"
+  },
+  "squirtle": {
+    "number": 7,
+    "height": 5,
+    "weight": 90,
+    "base_experience": 63,
+    "base_speed": 43,
+    "base_special_defense": 64,
+    "base_special_attack": 50,
+    "base_defense": 65,
+    "base_attack": 48,
+    "base_hp": 44,
+    "types": [
+      "water"
+    ],
+    "name": "squirtle"
+  },
+  "wartortle": {
+    "number": 8,
+    "height": 10,
+    "weight": 225,
+    "base_experience": 142,
+    "base_speed": 58,
+    "base_special_defense": 80,
+    "base_special_attack": 65,
+    "base_defense": 80,
+    "base_attack": 63,
+    "base_hp": 59,
+    "types": [
+      "water"
+    ],
+    "name": "wartortle"
+  },
+  "blastoise": {
+    "number": 9,
+    "height": 16,
+    "weight": 855,
+    "base_experience": 239,
+    "base_speed": 78,
+    "base_special_defense": 105,
+    "base_special_attack": 85,
+    "base_defense": 100,
+    "base_attack": 83,
+    "base_hp": 79,
+    "types": [
+      "water"
+    ],
+    "name": "blastoise"
+  },
+  "caterpie": {
+    "number": 10,
+    "height": 3,
+    "weight": 29,
+    "base_experience": 39,
+    "base_speed": 45,
+    "base_special_defense": 20,
+    "base_special_attack": 20,
+    "base_defense": 35,
+    "base_attack": 30,
+    "base_hp": 45,
+    "types": [
+      "bug"
+    ],
+    "name": "caterpie"
+  },
+  "metapod": {
+    "number": 11,
+    "height": 7,
+    "weight": 99,
+    "base_experience": 72,
+    "base_speed": 30,
+    "base_special_defense": 25,
+    "base_special_attack": 25,
+    "base_defense": 55,
+    "base_attack": 20,
+    "base_hp": 50,
+    "types": [
+      "bug"
+    ],
+    "name": "metapod"
+  },
+  "butterfree": {
+    "number": 12,
+    "height": 11,
+    "weight": 320,
+    "base_experience": 178,
+    "base_speed": 70,
+    "base_special_defense": 80,
+    "base_special_attack": 90,
+    "base_defense": 50,
+    "base_attack": 45,
+    "base_hp": 60,
+    "types": [
+      "flying",
+      "bug"
+    ],
+    "name": "butterfree"
+  },
+  "weedle": {
+    "number": 13,
+    "height": 3,
+    "weight": 32,
+    "base_experience": 39,
+    "base_speed": 50,
+    "base_special_defense": 20,
+    "base_special_attack": 20,
+    "base_defense": 30,
+    "base_attack": 35,
+    "base_hp": 40,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "name": "weedle"
+  },
+  "kakuna": {
+    "number": 14,
+    "height": 6,
+    "weight": 100,
+    "base_experience": 72,
+    "base_speed": 35,
+    "base_special_defense": 25,
+    "base_special_attack": 25,
+    "base_defense": 50,
+    "base_attack": 25,
+    "base_hp": 45,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "name": "kakuna"
+  },
+  "beedrill": {
+    "number": 15,
+    "height": 10,
+    "weight": 295,
+    "base_experience": 178,
+    "base_speed": 75,
+    "base_special_defense": 80,
+    "base_special_attack": 45,
+    "base_defense": 40,
+    "base_attack": 90,
+    "base_hp": 65,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "name": "beedrill"
+  },
+  "pidgey": {
+    "number": 16,
+    "height": 3,
+    "weight": 18,
+    "base_experience": 50,
+    "base_speed": 56,
+    "base_special_defense": 35,
+    "base_special_attack": 35,
+    "base_defense": 40,
+    "base_attack": 45,
+    "base_hp": 40,
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "pidgey"
+  },
+  "pidgeotto": {
+    "number": 17,
+    "height": 11,
+    "weight": 300,
+    "base_experience": 122,
+    "base_speed": 71,
+    "base_special_defense": 50,
+    "base_special_attack": 50,
+    "base_defense": 55,
+    "base_attack": 60,
+    "base_hp": 63,
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "pidgeotto"
+  },
+  "pidgeot": {
+    "number": 18,
+    "height": 15,
+    "weight": 395,
+    "base_experience": 216,
+    "base_speed": 101,
+    "base_special_defense": 70,
+    "base_special_attack": 70,
+    "base_defense": 75,
+    "base_attack": 80,
+    "base_hp": 83,
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "pidgeot"
+  },
+  "rattata": {
+    "number": 19,
+    "height": 3,
+    "weight": 35,
+    "base_experience": 51,
+    "base_speed": 72,
+    "base_special_defense": 35,
+    "base_special_attack": 25,
+    "base_defense": 35,
+    "base_attack": 56,
+    "base_hp": 30,
+    "types": [
+      "normal"
+    ],
+    "name": "rattata"
+  },
+  "raticate": {
+    "number": 20,
+    "height": 7,
+    "weight": 185,
+    "base_experience": 145,
+    "base_speed": 97,
+    "base_special_defense": 70,
+    "base_special_attack": 50,
+    "base_defense": 60,
+    "base_attack": 81,
+    "base_hp": 55,
+    "types": [
+      "normal"
+    ],
+    "name": "raticate"
+  },
+  "spearow": {
+    "number": 21,
+    "height": 3,
+    "weight": 20,
+    "base_experience": 52,
+    "base_speed": 70,
+    "base_special_defense": 31,
+    "base_special_attack": 31,
+    "base_defense": 30,
+    "base_attack": 60,
+    "base_hp": 40,
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "spearow"
+  },
+  "fearow": {
+    "number": 22,
+    "height": 12,
+    "weight": 380,
+    "base_experience": 155,
+    "base_speed": 100,
+    "base_special_defense": 61,
+    "base_special_attack": 61,
+    "base_defense": 65,
+    "base_attack": 90,
+    "base_hp": 65,
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "fearow"
+  },
+  "ekans": {
+    "number": 23,
+    "height": 20,
+    "weight": 69,
+    "base_experience": 58,
+    "base_speed": 55,
+    "base_special_defense": 54,
+    "base_special_attack": 40,
+    "base_defense": 44,
+    "base_attack": 60,
+    "base_hp": 35,
+    "types": [
+      "poison"
+    ],
+    "name": "ekans"
+  },
+  "arbok": {
+    "number": 24,
+    "height": 35,
+    "weight": 650,
+    "base_experience": 153,
+    "base_speed": 80,
+    "base_special_defense": 79,
+    "base_special_attack": 65,
+    "base_defense": 69,
+    "base_attack": 85,
+    "base_hp": 60,
+    "types": [
+      "poison"
+    ],
+    "name": "arbok"
+  },
+  "pikachu": {
+    "number": 25,
+    "height": 4,
+    "weight": 60,
+    "base_experience": 112,
+    "base_speed": 90,
+    "base_special_defense": 50,
+    "base_special_attack": 50,
+    "base_defense": 40,
+    "base_attack": 55,
+    "base_hp": 35,
+    "types": [
+      "electric"
+    ],
+    "name": "pikachu"
+  },
+  "raichu": {
+    "number": 26,
+    "height": 8,
+    "weight": 300,
+    "base_experience": 218,
+    "base_speed": 110,
+    "base_special_defense": 80,
+    "base_special_attack": 90,
+    "base_defense": 55,
+    "base_attack": 90,
+    "base_hp": 60,
+    "types": [
+      "electric"
+    ],
+    "name": "raichu"
+  },
+  "sandshrew": {
+    "number": 27,
+    "height": 6,
+    "weight": 120,
+    "base_experience": 60,
+    "base_speed": 40,
+    "base_special_defense": 30,
+    "base_special_attack": 20,
+    "base_defense": 85,
+    "base_attack": 75,
+    "base_hp": 50,
+    "types": [
+      "ground"
+    ],
+    "name": "sandshrew"
+  },
+  "sandslash": {
+    "number": 28,
+    "height": 10,
+    "weight": 295,
+    "base_experience": 158,
+    "base_speed": 65,
+    "base_special_defense": 55,
+    "base_special_attack": 45,
+    "base_defense": 110,
+    "base_attack": 100,
+    "base_hp": 75,
+    "types": [
+      "ground"
+    ],
+    "name": "sandslash"
+  },
+  "nidoran-f": {
+    "number": 29,
+    "height": 4,
+    "weight": 70,
+    "base_experience": 55,
+    "base_speed": 41,
+    "base_special_defense": 40,
+    "base_special_attack": 40,
+    "base_defense": 52,
+    "base_attack": 47,
+    "base_hp": 55,
+    "types": [
+      "poison"
+    ],
+    "name": "nidoran-f"
+  },
+  "nidorina": {
+    "number": 30,
+    "height": 8,
+    "weight": 200,
+    "base_experience": 128,
+    "base_speed": 56,
+    "base_special_defense": 55,
+    "base_special_attack": 55,
+    "base_defense": 67,
+    "base_attack": 62,
+    "base_hp": 70,
+    "types": [
+      "poison"
+    ],
+    "name": "nidorina"
+  },
+  "nidoqueen": {
+    "number": 31,
+    "height": 13,
+    "weight": 600,
+    "base_experience": 227,
+    "base_speed": 76,
+    "base_special_defense": 85,
+    "base_special_attack": 75,
+    "base_defense": 87,
+    "base_attack": 92,
+    "base_hp": 90,
+    "types": [
+      "ground",
+      "poison"
+    ],
+    "name": "nidoqueen"
+  },
+  "nidoran-m": {
+    "number": 32,
+    "height": 5,
+    "weight": 90,
+    "base_experience": 55,
+    "base_speed": 50,
+    "base_special_defense": 40,
+    "base_special_attack": 40,
+    "base_defense": 40,
+    "base_attack": 57,
+    "base_hp": 46,
+    "types": [
+      "poison"
+    ],
+    "name": "nidoran-m"
+  },
+  "nidorino": {
+    "number": 33,
+    "height": 9,
+    "weight": 195,
+    "base_experience": 128,
+    "base_speed": 65,
+    "base_special_defense": 55,
+    "base_special_attack": 55,
+    "base_defense": 57,
+    "base_attack": 72,
+    "base_hp": 61,
+    "types": [
+      "poison"
+    ],
+    "name": "nidorino"
+  },
+  "nidoking": {
+    "number": 34,
+    "height": 14,
+    "weight": 620,
+    "base_experience": 227,
+    "base_speed": 85,
+    "base_special_defense": 75,
+    "base_special_attack": 85,
+    "base_defense": 77,
+    "base_attack": 102,
+    "base_hp": 81,
+    "types": [
+      "ground",
+      "poison"
+    ],
+    "name": "nidoking"
+  },
+  "clefairy": {
+    "number": 35,
+    "height": 6,
+    "weight": 75,
+    "base_experience": 113,
+    "base_speed": 35,
+    "base_special_defense": 65,
+    "base_special_attack": 60,
+    "base_defense": 48,
+    "base_attack": 45,
+    "base_hp": 70,
+    "types": [
+      "fairy"
+    ],
+    "name": "clefairy"
+  },
+  "clefable": {
+    "number": 36,
+    "height": 13,
+    "weight": 400,
+    "base_experience": 217,
+    "base_speed": 60,
+    "base_special_defense": 90,
+    "base_special_attack": 95,
+    "base_defense": 73,
+    "base_attack": 70,
+    "base_hp": 95,
+    "types": [
+      "fairy"
+    ],
+    "name": "clefable"
+  },
+  "vulpix": {
+    "number": 37,
+    "height": 6,
+    "weight": 99,
+    "base_experience": 60,
+    "base_speed": 65,
+    "base_special_defense": 65,
+    "base_special_attack": 50,
+    "base_defense": 40,
+    "base_attack": 41,
+    "base_hp": 38,
+    "types": [
+      "fire"
+    ],
+    "name": "vulpix"
+  },
+  "ninetales": {
+    "number": 38,
+    "height": 11,
+    "weight": 199,
+    "base_experience": 177,
+    "base_speed": 100,
+    "base_special_defense": 100,
+    "base_special_attack": 81,
+    "base_defense": 75,
+    "base_attack": 76,
+    "base_hp": 73,
+    "types": [
+      "fire"
+    ],
+    "name": "ninetales"
+  },
+  "jigglypuff": {
+    "number": 39,
+    "height": 5,
+    "weight": 55,
+    "base_experience": 95,
+    "base_speed": 20,
+    "base_special_defense": 25,
+    "base_special_attack": 45,
+    "base_defense": 20,
+    "base_attack": 45,
+    "base_hp": 115,
+    "types": [
+      "fairy",
+      "normal"
+    ],
+    "name": "jigglypuff"
+  },
+  "wigglytuff": {
+    "number": 40,
+    "height": 10,
+    "weight": 120,
+    "base_experience": 196,
+    "base_speed": 45,
+    "base_special_defense": 50,
+    "base_special_attack": 85,
+    "base_defense": 45,
+    "base_attack": 70,
+    "base_hp": 140,
+    "types": [
+      "fairy",
+      "normal"
+    ],
+    "name": "wigglytuff"
+  },
+  "zubat": {
+    "number": 41,
+    "height": 8,
+    "weight": 75,
+    "base_experience": 49,
+    "base_speed": 55,
+    "base_special_defense": 40,
+    "base_special_attack": 30,
+    "base_defense": 35,
+    "base_attack": 45,
+    "base_hp": 40,
+    "types": [
+      "flying",
+      "poison"
+    ],
+    "name": "zubat"
+  },
+  "golbat": {
+    "number": 42,
+    "height": 16,
+    "weight": 550,
+    "base_experience": 159,
+    "base_speed": 90,
+    "base_special_defense": 75,
+    "base_special_attack": 65,
+    "base_defense": 70,
+    "base_attack": 80,
+    "base_hp": 75,
+    "types": [
+      "flying",
+      "poison"
+    ],
+    "name": "golbat"
+  },
+  "oddish": {
+    "number": 43,
+    "height": 5,
+    "weight": 54,
+    "base_experience": 64,
+    "base_speed": 30,
+    "base_special_defense": 65,
+    "base_special_attack": 75,
+    "base_defense": 55,
+    "base_attack": 50,
+    "base_hp": 45,
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "oddish"
+  },
+  "gloom": {
+    "number": 44,
+    "height": 8,
+    "weight": 86,
+    "base_experience": 138,
+    "base_speed": 40,
+    "base_special_defense": 75,
+    "base_special_attack": 85,
+    "base_defense": 70,
+    "base_attack": 65,
+    "base_hp": 60,
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "gloom"
+  },
+  "vileplume": {
+    "number": 45,
+    "height": 12,
+    "weight": 186,
+    "base_experience": 221,
+    "base_speed": 50,
+    "base_special_defense": 90,
+    "base_special_attack": 110,
+    "base_defense": 85,
+    "base_attack": 80,
+    "base_hp": 75,
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "vileplume"
+  },
+  "paras": {
+    "number": 46,
+    "height": 3,
+    "weight": 54,
+    "base_experience": 57,
+    "base_speed": 25,
+    "base_special_defense": 55,
+    "base_special_attack": 45,
+    "base_defense": 55,
+    "base_attack": 70,
+    "base_hp": 35,
+    "types": [
+      "grass",
+      "bug"
+    ],
+    "name": "paras"
+  },
+  "parasect": {
+    "number": 47,
+    "height": 10,
+    "weight": 295,
+    "base_experience": 142,
+    "base_speed": 30,
+    "base_special_defense": 80,
+    "base_special_attack": 60,
+    "base_defense": 80,
+    "base_attack": 95,
+    "base_hp": 60,
+    "types": [
+      "grass",
+      "bug"
+    ],
+    "name": "parasect"
+  },
+  "venonat": {
+    "number": 48,
+    "height": 10,
+    "weight": 300,
+    "base_experience": 61,
+    "base_speed": 45,
+    "base_special_defense": 55,
+    "base_special_attack": 40,
+    "base_defense": 50,
+    "base_attack": 55,
+    "base_hp": 60,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "name": "venonat"
+  },
+  "venomoth": {
+    "number": 49,
+    "height": 15,
+    "weight": 125,
+    "base_experience": 158,
+    "base_speed": 90,
+    "base_special_defense": 75,
+    "base_special_attack": 90,
+    "base_defense": 60,
+    "base_attack": 65,
+    "base_hp": 70,
+    "types": [
+      "poison",
+      "bug"
+    ],
+    "name": "venomoth"
+  },
+  "diglett": {
+    "number": 50,
+    "height": 2,
+    "weight": 8,
+    "base_experience": 53,
+    "base_speed": 95,
+    "base_special_defense": 45,
+    "base_special_attack": 35,
+    "base_defense": 25,
+    "base_attack": 55,
+    "base_hp": 10,
+    "types": [
+      "ground"
+    ],
+    "name": "diglett"
+  },
+  "dugtrio": {
+    "number": 51,
+    "height": 7,
+    "weight": 333,
+    "base_experience": 142,
+    "base_speed": 120,
+    "base_special_defense": 70,
+    "base_special_attack": 50,
+    "base_defense": 50,
+    "base_attack": 80,
+    "base_hp": 35,
+    "types": [
+      "ground"
+    ],
+    "name": "dugtrio"
+  },
+  "meowth": {
+    "number": 52,
+    "height": 4,
+    "weight": 42,
+    "base_experience": 58,
+    "base_speed": 90,
+    "base_special_defense": 40,
+    "base_special_attack": 40,
+    "base_defense": 35,
+    "base_attack": 45,
+    "base_hp": 40,
+    "types": [
+      "normal"
+    ],
+    "name": "meowth"
+  },
+  "persian": {
+    "number": 53,
+    "height": 10,
+    "weight": 320,
+    "base_experience": 154,
+    "base_speed": 115,
+    "base_special_defense": 65,
+    "base_special_attack": 65,
+    "base_defense": 60,
+    "base_attack": 70,
+    "base_hp": 65,
+    "types": [
+      "normal"
+    ],
+    "name": "persian"
+  },
+  "psyduck": {
+    "number": 54,
+    "height": 8,
+    "weight": 196,
+    "base_experience": 64,
+    "base_speed": 55,
+    "base_special_defense": 50,
+    "base_special_attack": 65,
+    "base_defense": 48,
+    "base_attack": 52,
+    "base_hp": 50,
+    "types": [
+      "water"
+    ],
+    "name": "psyduck"
+  },
+  "golduck": {
+    "number": 55,
+    "height": 17,
+    "weight": 766,
+    "base_experience": 175,
+    "base_speed": 85,
+    "base_special_defense": 80,
+    "base_special_attack": 95,
+    "base_defense": 78,
+    "base_attack": 82,
+    "base_hp": 80,
+    "types": [
+      "water"
+    ],
+    "name": "golduck"
+  },
+  "mankey": {
+    "number": 56,
+    "height": 5,
+    "weight": 280,
+    "base_experience": 61,
+    "base_speed": 70,
+    "base_special_defense": 45,
+    "base_special_attack": 35,
+    "base_defense": 35,
+    "base_attack": 80,
+    "base_hp": 40,
+    "types": [
+      "fighting"
+    ],
+    "name": "mankey"
+  },
+  "primeape": {
+    "number": 57,
+    "height": 10,
+    "weight": 320,
+    "base_experience": 159,
+    "base_speed": 95,
+    "base_special_defense": 70,
+    "base_special_attack": 60,
+    "base_defense": 60,
+    "base_attack": 105,
+    "base_hp": 65,
+    "types": [
+      "fighting"
+    ],
+    "name": "primeape"
+  },
+  "growlithe": {
+    "number": 58,
+    "height": 7,
+    "weight": 190,
+    "base_experience": 70,
+    "base_speed": 60,
+    "base_special_defense": 50,
+    "base_special_attack": 70,
+    "base_defense": 45,
+    "base_attack": 70,
+    "base_hp": 55,
+    "types": [
+      "fire"
+    ],
+    "name": "growlithe"
+  },
+  "arcanine": {
+    "number": 59,
+    "height": 19,
+    "weight": 1550,
+    "base_experience": 194,
+    "base_speed": 95,
+    "base_special_defense": 80,
+    "base_special_attack": 100,
+    "base_defense": 80,
+    "base_attack": 110,
+    "base_hp": 90,
+    "types": [
+      "fire"
+    ],
+    "name": "arcanine"
+  },
+  "poliwag": {
+    "number": 60,
+    "height": 6,
+    "weight": 124,
+    "base_experience": 60,
+    "base_speed": 90,
+    "base_special_defense": 40,
+    "base_special_attack": 40,
+    "base_defense": 40,
+    "base_attack": 50,
+    "base_hp": 40,
+    "types": [
+      "water"
+    ],
+    "name": "poliwag"
+  },
+  "poliwhirl": {
+    "number": 61,
+    "height": 10,
+    "weight": 200,
+    "base_experience": 135,
+    "base_speed": 90,
+    "base_special_defense": 50,
+    "base_special_attack": 50,
+    "base_defense": 65,
+    "base_attack": 65,
+    "base_hp": 65,
+    "types": [
+      "water"
+    ],
+    "name": "poliwhirl"
+  },
+  "poliwrath": {
+    "number": 62,
+    "height": 13,
+    "weight": 540,
+    "base_experience": 230,
+    "base_speed": 70,
+    "base_special_defense": 90,
+    "base_special_attack": 70,
+    "base_defense": 95,
+    "base_attack": 95,
+    "base_hp": 90,
+    "types": [
+      "fighting",
+      "water"
+    ],
+    "name": "poliwrath"
+  },
+  "abra": {
+    "number": 63,
+    "height": 9,
+    "weight": 195,
+    "base_experience": 62,
+    "base_speed": 90,
+    "base_special_defense": 55,
+    "base_special_attack": 105,
+    "base_defense": 15,
+    "base_attack": 20,
+    "base_hp": 25,
+    "types": [
+      "psychic"
+    ],
+    "name": "abra"
+  },
+  "kadabra": {
+    "number": 64,
+    "height": 13,
+    "weight": 565,
+    "base_experience": 140,
+    "base_speed": 105,
+    "base_special_defense": 70,
+    "base_special_attack": 120,
+    "base_defense": 30,
+    "base_attack": 35,
+    "base_hp": 40,
+    "types": [
+      "psychic"
+    ],
+    "name": "kadabra"
+  },
+  "alakazam": {
+    "number": 65,
+    "height": 15,
+    "weight": 480,
+    "base_experience": 225,
+    "base_speed": 120,
+    "base_special_defense": 95,
+    "base_special_attack": 135,
+    "base_defense": 45,
+    "base_attack": 50,
+    "base_hp": 55,
+    "types": [
+      "psychic"
+    ],
+    "name": "alakazam"
+  },
+  "machop": {
+    "number": 66,
+    "height": 8,
+    "weight": 195,
+    "base_experience": 61,
+    "base_speed": 35,
+    "base_special_defense": 35,
+    "base_special_attack": 35,
+    "base_defense": 50,
+    "base_attack": 80,
+    "base_hp": 70,
+    "types": [
+      "fighting"
+    ],
+    "name": "machop"
+  },
+  "machoke": {
+    "number": 67,
+    "height": 15,
+    "weight": 705,
+    "base_experience": 142,
+    "base_speed": 45,
+    "base_special_defense": 60,
+    "base_special_attack": 50,
+    "base_defense": 70,
+    "base_attack": 100,
+    "base_hp": 80,
+    "types": [
+      "fighting"
+    ],
+    "name": "machoke"
+  },
+  "machamp": {
+    "number": 68,
+    "height": 16,
+    "weight": 1300,
+    "base_experience": 227,
+    "base_speed": 55,
+    "base_special_defense": 85,
+    "base_special_attack": 65,
+    "base_defense": 80,
+    "base_attack": 130,
+    "base_hp": 90,
+    "types": [
+      "fighting"
+    ],
+    "name": "machamp"
+  },
+  "bellsprout": {
+    "number": 69,
+    "height": 7,
+    "weight": 40,
+    "base_experience": 60,
+    "base_speed": 40,
+    "base_special_defense": 30,
+    "base_special_attack": 70,
+    "base_defense": 35,
+    "base_attack": 75,
+    "base_hp": 50,
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "bellsprout"
+  },
+  "weepinbell": {
+    "number": 70,
+    "height": 10,
+    "weight": 64,
+    "base_experience": 137,
+    "base_speed": 55,
+    "base_special_defense": 45,
+    "base_special_attack": 85,
+    "base_defense": 50,
+    "base_attack": 90,
+    "base_hp": 65,
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "weepinbell"
+  },
+  "victreebel": {
+    "number": 71,
+    "height": 17,
+    "weight": 155,
+    "base_experience": 221,
+    "base_speed": 70,
+    "base_special_defense": 70,
+    "base_special_attack": 100,
+    "base_defense": 65,
+    "base_attack": 105,
+    "base_hp": 80,
+    "types": [
+      "poison",
+      "grass"
+    ],
+    "name": "victreebel"
+  },
+  "tentacool": {
+    "number": 72,
+    "height": 9,
+    "weight": 455,
+    "base_experience": 67,
+    "base_speed": 70,
+    "base_special_defense": 100,
+    "base_special_attack": 50,
+    "base_defense": 35,
+    "base_attack": 40,
+    "base_hp": 40,
+    "types": [
+      "poison",
+      "water"
+    ],
+    "name": "tentacool"
+  },
+  "tentacruel": {
+    "number": 73,
+    "height": 16,
+    "weight": 550,
+    "base_experience": 180,
+    "base_speed": 100,
+    "base_special_defense": 120,
+    "base_special_attack": 80,
+    "base_defense": 65,
+    "base_attack": 70,
+    "base_hp": 80,
+    "types": [
+      "poison",
+      "water"
+    ],
+    "name": "tentacruel"
+  },
+  "geodude": {
+    "number": 74,
+    "height": 4,
+    "weight": 200,
+    "base_experience": 60,
+    "base_speed": 20,
+    "base_special_defense": 30,
+    "base_special_attack": 30,
+    "base_defense": 100,
+    "base_attack": 80,
+    "base_hp": 40,
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "name": "geodude"
+  },
+  "graveler": {
+    "number": 75,
+    "height": 10,
+    "weight": 1050,
+    "base_experience": 137,
+    "base_speed": 35,
+    "base_special_defense": 45,
+    "base_special_attack": 45,
+    "base_defense": 115,
+    "base_attack": 95,
+    "base_hp": 55,
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "name": "graveler"
+  },
+  "golem": {
+    "number": 76,
+    "height": 14,
+    "weight": 3000,
+    "base_experience": 223,
+    "base_speed": 45,
+    "base_special_defense": 65,
+    "base_special_attack": 55,
+    "base_defense": 130,
+    "base_attack": 120,
+    "base_hp": 80,
+    "types": [
+      "ground",
+      "rock"
+    ],
+    "name": "golem"
+  },
+  "ponyta": {
+    "number": 77,
+    "height": 10,
+    "weight": 300,
+    "base_experience": 82,
+    "base_speed": 90,
+    "base_special_defense": 65,
+    "base_special_attack": 65,
+    "base_defense": 55,
+    "base_attack": 85,
+    "base_hp": 50,
+    "types": [
+      "fire"
+    ],
+    "name": "ponyta"
+  },
+  "rapidash": {
+    "number": 78,
+    "height": 17,
+    "weight": 950,
+    "base_experience": 175,
+    "base_speed": 105,
+    "base_special_defense": 80,
+    "base_special_attack": 80,
+    "base_defense": 70,
+    "base_attack": 100,
+    "base_hp": 65,
+    "types": [
+      "fire"
+    ],
+    "name": "rapidash"
+  },
+  "slowpoke": {
+    "number": 79,
+    "height": 12,
+    "weight": 360,
+    "base_experience": 63,
+    "base_speed": 15,
+    "base_special_defense": 40,
+    "base_special_attack": 40,
+    "base_defense": 65,
+    "base_attack": 65,
+    "base_hp": 90,
+    "types": [
+      "psychic",
+      "water"
+    ],
+    "name": "slowpoke"
+  },
+  "slowbro": {
+    "number": 80,
+    "height": 16,
+    "weight": 785,
+    "base_experience": 172,
+    "base_speed": 30,
+    "base_special_defense": 80,
+    "base_special_attack": 100,
+    "base_defense": 110,
+    "base_attack": 75,
+    "base_hp": 95,
+    "types": [
+      "psychic",
+      "water"
+    ],
+    "name": "slowbro"
+  },
+  "magnemite": {
+    "number": 81,
+    "height": 3,
+    "weight": 60,
+    "base_experience": 65,
+    "base_speed": 45,
+    "base_special_defense": 55,
+    "base_special_attack": 95,
+    "base_defense": 70,
+    "base_attack": 35,
+    "base_hp": 25,
+    "types": [
+      "steel",
+      "electric"
+    ],
+    "name": "magnemite"
+  },
+  "magneton": {
+    "number": 82,
+    "height": 10,
+    "weight": 600,
+    "base_experience": 163,
+    "base_speed": 70,
+    "base_special_defense": 70,
+    "base_special_attack": 120,
+    "base_defense": 95,
+    "base_attack": 60,
+    "base_hp": 50,
+    "types": [
+      "steel",
+      "electric"
+    ],
+    "name": "magneton"
+  },
+  "farfetchd": {
+    "number": 83,
+    "height": 8,
+    "weight": 150,
+    "base_experience": 123,
+    "base_speed": 60,
+    "base_special_defense": 62,
+    "base_special_attack": 58,
+    "base_defense": 55,
+    "base_attack": 65,
+    "base_hp": 52,
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "farfetchd"
+  },
+  "doduo": {
+    "number": 84,
+    "height": 14,
+    "weight": 392,
+    "base_experience": 62,
+    "base_speed": 75,
+    "base_special_defense": 35,
+    "base_special_attack": 35,
+    "base_defense": 45,
+    "base_attack": 85,
+    "base_hp": 35,
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "doduo"
+  },
+  "dodrio": {
+    "number": 85,
+    "height": 18,
+    "weight": 852,
+    "base_experience": 161,
+    "base_speed": 100,
+    "base_special_defense": 60,
+    "base_special_attack": 60,
+    "base_defense": 70,
+    "base_attack": 110,
+    "base_hp": 60,
+    "types": [
+      "flying",
+      "normal"
+    ],
+    "name": "dodrio"
+  },
+  "seel": {
+    "number": 86,
+    "height": 11,
+    "weight": 900,
+    "base_experience": 65,
+    "base_speed": 45,
+    "base_special_defense": 70,
+    "base_special_attack": 45,
+    "base_defense": 55,
+    "base_attack": 45,
+    "base_hp": 65,
+    "types": [
+      "water"
+    ],
+    "name": "seel"
+  },
+  "dewgong": {
+    "number": 87,
+    "height": 17,
+    "weight": 1200,
+    "base_experience": 166,
+    "base_speed": 70,
+    "base_special_defense": 95,
+    "base_special_attack": 70,
+    "base_defense": 80,
+    "base_attack": 70,
+    "base_hp": 90,
+    "types": [
+      "ice",
+      "water"
+    ],
+    "name": "dewgong"
+  },
+  "grimer": {
+    "number": 88,
+    "height": 9,
+    "weight": 300,
+    "base_experience": 65,
+    "base_speed": 25,
+    "base_special_defense": 50,
+    "base_special_attack": 40,
+    "base_defense": 50,
+    "base_attack": 80,
+    "base_hp": 80,
+    "types": [
+      "poison"
+    ],
+    "name": "grimer"
+  },
+  "muk": {
+    "number": 89,
+    "height": 12,
+    "weight": 300,
+    "base_experience": 175,
+    "base_speed": 50,
+    "base_special_defense": 100,
+    "base_special_attack": 65,
+    "base_defense": 75,
+    "base_attack": 105,
+    "base_hp": 105,
+    "types": [
+      "poison"
+    ],
+    "name": "muk"
+  },
+  "shellder": {
+    "number": 90,
+    "height": 3,
+    "weight": 40,
+    "base_experience": 61,
+    "base_speed": 40,
+    "base_special_defense": 25,
+    "base_special_attack": 45,
+    "base_defense": 100,
+    "base_attack": 65,
+    "base_hp": 30,
+    "types": [
+      "water"
+    ],
+    "name": "shellder"
+  },
+  "cloyster": {
+    "number": 91,
+    "height": 15,
+    "weight": 1325,
+    "base_experience": 184,
+    "base_speed": 70,
+    "base_special_defense": 45,
+    "base_special_attack": 85,
+    "base_defense": 180,
+    "base_attack": 95,
+    "base_hp": 50,
+    "types": [
+      "ice",
+      "water"
+    ],
+    "name": "cloyster"
+  },
+  "gastly": {
+    "number": 92,
+    "height": 13,
+    "weight": 1,
+    "base_experience": 62,
+    "base_speed": 80,
+    "base_special_defense": 35,
+    "base_special_attack": 100,
+    "base_defense": 30,
+    "base_attack": 35,
+    "base_hp": 30,
+    "types": [
+      "poison",
+      "ghost"
+    ],
+    "name": "gastly"
+  },
+  "haunter": {
+    "number": 93,
+    "height": 16,
+    "weight": 1,
+    "base_experience": 142,
+    "base_speed": 95,
+    "base_special_defense": 55,
+    "base_special_attack": 115,
+    "base_defense": 45,
+    "base_attack": 50,
+    "base_hp": 45,
+    "types": [
+      "poison",
+      "ghost"
+    ],
+    "name": "haunter"
+  },
+  "gengar": {
+    "number": 94,
+    "height": 15,
+    "weight": 405,
+    "base_experience": 225,
+    "base_speed": 110,
+    "base_special_defense": 75,
+    "base_special_attack": 130,
+    "base_defense": 60,
+    "base_attack": 65,
+    "base_hp": 60,
+    "types": [
+      "poison",
+      "ghost"
+    ],
+    "name": "gengar"
+  },
+  "onix": {
+    "number": 95,
+    "height": 88,
+    "weight": 2100,
+    "base_experience": 77,
+    "base_speed": 70,
+    "base_special_defense": 45,
+    "base_special_attack": 30,
+    "base_defense": 160,
+    "base_attack": 45,
+    "base_hp": 35,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "name": "onix"
+  },
+  "drowzee": {
+    "number": 96,
+    "height": 10,
+    "weight": 324,
+    "base_experience": 66,
+    "base_speed": 42,
+    "base_special_defense": 90,
+    "base_special_attack": 43,
+    "base_defense": 45,
+    "base_attack": 48,
+    "base_hp": 60,
+    "types": [
+      "psychic"
+    ],
+    "name": "drowzee"
+  },
+  "hypno": {
+    "number": 97,
+    "height": 16,
+    "weight": 756,
+    "base_experience": 169,
+    "base_speed": 67,
+    "base_special_defense": 115,
+    "base_special_attack": 73,
+    "base_defense": 70,
+    "base_attack": 73,
+    "base_hp": 85,
+    "types": [
+      "psychic"
+    ],
+    "name": "hypno"
+  },
+  "krabby": {
+    "number": 98,
+    "height": 4,
+    "weight": 65,
+    "base_experience": 65,
+    "base_speed": 50,
+    "base_special_defense": 25,
+    "base_special_attack": 25,
+    "base_defense": 90,
+    "base_attack": 105,
+    "base_hp": 30,
+    "types": [
+      "water"
+    ],
+    "name": "krabby"
+  },
+  "kingler": {
+    "number": 99,
+    "height": 13,
+    "weight": 600,
+    "base_experience": 166,
+    "base_speed": 75,
+    "base_special_defense": 50,
+    "base_special_attack": 50,
+    "base_defense": 115,
+    "base_attack": 130,
+    "base_hp": 55,
+    "types": [
+      "water"
+    ],
+    "name": "kingler"
+  },
+  "voltorb": {
+    "number": 100,
+    "height": 5,
+    "weight": 104,
+    "base_experience": 66,
+    "base_speed": 100,
+    "base_special_defense": 55,
+    "base_special_attack": 55,
+    "base_defense": 50,
+    "base_attack": 30,
+    "base_hp": 40,
+    "types": [
+      "electric"
+    ],
+    "name": "voltorb"
+  },
+  "electrode": {
+    "number": 101,
+    "height": 12,
+    "weight": 666,
+    "base_experience": 168,
+    "base_speed": 140,
+    "base_special_defense": 80,
+    "base_special_attack": 80,
+    "base_defense": 70,
+    "base_attack": 50,
+    "base_hp": 60,
+    "types": [
+      "electric"
+    ],
+    "name": "electrode"
+  },
+  "exeggcute": {
+    "number": 102,
+    "height": 4,
+    "weight": 25,
+    "base_experience": 65,
+    "base_speed": 40,
+    "base_special_defense": 45,
+    "base_special_attack": 60,
+    "base_defense": 80,
+    "base_attack": 40,
+    "base_hp": 60,
+    "types": [
+      "psychic",
+      "grass"
+    ],
+    "name": "exeggcute"
+  },
+  "exeggutor": {
+    "number": 103,
+    "height": 20,
+    "weight": 1200,
+    "base_experience": 182,
+    "base_speed": 55,
+    "base_special_defense": 65,
+    "base_special_attack": 125,
+    "base_defense": 85,
+    "base_attack": 95,
+    "base_hp": 95,
+    "types": [
+      "psychic",
+      "grass"
+    ],
+    "name": "exeggutor"
+  },
+  "cubone": {
+    "number": 104,
+    "height": 4,
+    "weight": 65,
+    "base_experience": 64,
+    "base_speed": 35,
+    "base_special_defense": 50,
+    "base_special_attack": 40,
+    "base_defense": 95,
+    "base_attack": 50,
+    "base_hp": 50,
+    "types": [
+      "ground"
+    ],
+    "name": "cubone"
+  },
+  "marowak": {
+    "number": 105,
+    "height": 10,
+    "weight": 450,
+    "base_experience": 149,
+    "base_speed": 45,
+    "base_special_defense": 80,
+    "base_special_attack": 50,
+    "base_defense": 110,
+    "base_attack": 80,
+    "base_hp": 60,
+    "types": [
+      "ground"
+    ],
+    "name": "marowak"
+  },
+  "hitmonlee": {
+    "number": 106,
+    "height": 15,
+    "weight": 498,
+    "base_experience": 159,
+    "base_speed": 87,
+    "base_special_defense": 110,
+    "base_special_attack": 35,
+    "base_defense": 53,
+    "base_attack": 120,
+    "base_hp": 50,
+    "types": [
+      "fighting"
+    ],
+    "name": "hitmonlee"
+  },
+  "hitmonchan": {
+    "number": 107,
+    "height": 14,
+    "weight": 502,
+    "base_experience": 159,
+    "base_speed": 76,
+    "base_special_defense": 110,
+    "base_special_attack": 35,
+    "base_defense": 79,
+    "base_attack": 105,
+    "base_hp": 50,
+    "types": [
+      "fighting"
+    ],
+    "name": "hitmonchan"
+  },
+  "lickitung": {
+    "number": 108,
+    "height": 12,
+    "weight": 655,
+    "base_experience": 77,
+    "base_speed": 30,
+    "base_special_defense": 75,
+    "base_special_attack": 60,
+    "base_defense": 75,
+    "base_attack": 55,
+    "base_hp": 90,
+    "types": [
+      "normal"
+    ],
+    "name": "lickitung"
+  },
+  "koffing": {
+    "number": 109,
+    "height": 6,
+    "weight": 10,
+    "base_experience": 68,
+    "base_speed": 35,
+    "base_special_defense": 45,
+    "base_special_attack": 60,
+    "base_defense": 95,
+    "base_attack": 65,
+    "base_hp": 40,
+    "types": [
+      "poison"
+    ],
+    "name": "koffing"
+  },
+  "weezing": {
+    "number": 110,
+    "height": 12,
+    "weight": 95,
+    "base_experience": 172,
+    "base_speed": 60,
+    "base_special_defense": 70,
+    "base_special_attack": 85,
+    "base_defense": 120,
+    "base_attack": 90,
+    "base_hp": 65,
+    "types": [
+      "poison"
+    ],
+    "name": "weezing"
+  },
+  "rhyhorn": {
+    "number": 111,
+    "height": 10,
+    "weight": 1150,
+    "base_experience": 69,
+    "base_speed": 25,
+    "base_special_defense": 30,
+    "base_special_attack": 30,
+    "base_defense": 95,
+    "base_attack": 85,
+    "base_hp": 80,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "name": "rhyhorn"
+  },
+  "rhydon": {
+    "number": 112,
+    "height": 19,
+    "weight": 1200,
+    "base_experience": 170,
+    "base_speed": 40,
+    "base_special_defense": 45,
+    "base_special_attack": 45,
+    "base_defense": 120,
+    "base_attack": 130,
+    "base_hp": 105,
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "name": "rhydon"
+  },
+  "chansey": {
+    "number": 113,
+    "height": 11,
+    "weight": 346,
+    "base_experience": 395,
+    "base_speed": 50,
+    "base_special_defense": 105,
+    "base_special_attack": 35,
+    "base_defense": 5,
+    "base_attack": 5,
+    "base_hp": 250,
+    "types": [
+      "normal"
+    ],
+    "name": "chansey"
+  },
+  "tangela": {
+    "number": 114,
+    "height": 10,
+    "weight": 350,
+    "base_experience": 87,
+    "base_speed": 60,
+    "base_special_defense": 40,
+    "base_special_attack": 100,
+    "base_defense": 115,
+    "base_attack": 55,
+    "base_hp": 65,
+    "types": [
+      "grass"
+    ],
+    "name": "tangela"
+  },
+  "kangaskhan": {
+    "number": 115,
+    "height": 22,
+    "weight": 800,
+    "base_experience": 172,
+    "base_speed": 90,
+    "base_special_defense": 80,
+    "base_special_attack": 40,
+    "base_defense": 80,
+    "base_attack": 95,
+    "base_hp": 105,
+    "types": [
+      "normal"
+    ],
+    "name": "kangaskhan"
+  },
+  "horsea": {
+    "number": 116,
+    "height": 4,
+    "weight": 80,
+    "base_experience": 59,
+    "base_speed": 60,
+    "base_special_defense": 25,
+    "base_special_attack": 70,
+    "base_defense": 70,
+    "base_attack": 40,
+    "base_hp": 30,
+    "types": [
+      "water"
+    ],
+    "name": "horsea"
+  },
+  "seadra": {
+    "number": 117,
+    "height": 12,
+    "weight": 250,
+    "base_experience": 154,
+    "base_speed": 85,
+    "base_special_defense": 45,
+    "base_special_attack": 95,
+    "base_defense": 95,
+    "base_attack": 65,
+    "base_hp": 55,
+    "types": [
+      "water"
+    ],
+    "name": "seadra"
+  },
+  "goldeen": {
+    "number": 118,
+    "height": 6,
+    "weight": 150,
+    "base_experience": 64,
+    "base_speed": 63,
+    "base_special_defense": 50,
+    "base_special_attack": 35,
+    "base_defense": 60,
+    "base_attack": 67,
+    "base_hp": 45,
+    "types": [
+      "water"
+    ],
+    "name": "goldeen"
+  },
+  "seaking": {
+    "number": 119,
+    "height": 13,
+    "weight": 390,
+    "base_experience": 158,
+    "base_speed": 68,
+    "base_special_defense": 80,
+    "base_special_attack": 65,
+    "base_defense": 65,
+    "base_attack": 92,
+    "base_hp": 80,
+    "types": [
+      "water"
+    ],
+    "name": "seaking"
+  },
+  "staryu": {
+    "number": 120,
+    "height": 8,
+    "weight": 345,
+    "base_experience": 68,
+    "base_speed": 85,
+    "base_special_defense": 55,
+    "base_special_attack": 70,
+    "base_defense": 55,
+    "base_attack": 45,
+    "base_hp": 30,
+    "types": [
+      "water"
+    ],
+    "name": "staryu"
+  },
+  "starmie": {
+    "number": 121,
+    "height": 11,
+    "weight": 800,
+    "base_experience": 182,
+    "base_speed": 115,
+    "base_special_defense": 85,
+    "base_special_attack": 100,
+    "base_defense": 85,
+    "base_attack": 75,
+    "base_hp": 60,
+    "types": [
+      "psychic",
+      "water"
+    ],
+    "name": "starmie"
+  },
+  "mr-mime": {
+    "number": 122,
+    "height": 13,
+    "weight": 545,
+    "base_experience": 161,
+    "base_speed": 90,
+    "base_special_defense": 120,
+    "base_special_attack": 100,
+    "base_defense": 65,
+    "base_attack": 45,
+    "base_hp": 40,
+    "types": [
+      "fairy",
+      "psychic"
+    ],
+    "name": "mr-mime"
+  },
+  "scyther": {
+    "number": 123,
+    "height": 15,
+    "weight": 560,
+    "base_experience": 100,
+    "base_speed": 105,
+    "base_special_defense": 80,
+    "base_special_attack": 55,
+    "base_defense": 80,
+    "base_attack": 110,
+    "base_hp": 70,
+    "types": [
+      "flying",
+      "bug"
+    ],
+    "name": "scyther"
+  },
+  "jynx": {
+    "number": 124,
+    "height": 14,
+    "weight": 406,
+    "base_experience": 159,
+    "base_speed": 95,
+    "base_special_defense": 95,
+    "base_special_attack": 115,
+    "base_defense": 35,
+    "base_attack": 50,
+    "base_hp": 65,
+    "types": [
+      "psychic",
+      "ice"
+    ],
+    "name": "jynx"
+  },
+  "electabuzz": {
+    "number": 125,
+    "height": 11,
+    "weight": 300,
+    "base_experience": 172,
+    "base_speed": 105,
+    "base_special_defense": 85,
+    "base_special_attack": 95,
+    "base_defense": 57,
+    "base_attack": 83,
+    "base_hp": 65,
+    "types": [
+      "electric"
+    ],
+    "name": "electabuzz"
+  },
+  "magmar": {
+    "number": 126,
+    "height": 13,
+    "weight": 445,
+    "base_experience": 173,
+    "base_speed": 93,
+    "base_special_defense": 85,
+    "base_special_attack": 100,
+    "base_defense": 57,
+    "base_attack": 95,
+    "base_hp": 65,
+    "types": [
+      "fire"
+    ],
+    "name": "magmar"
+  },
+  "pinsir": {
+    "number": 127,
+    "height": 15,
+    "weight": 550,
+    "base_experience": 175,
+    "base_speed": 85,
+    "base_special_defense": 70,
+    "base_special_attack": 55,
+    "base_defense": 100,
+    "base_attack": 125,
+    "base_hp": 65,
+    "types": [
+      "bug"
+    ],
+    "name": "pinsir"
+  },
+  "tauros": {
+    "number": 128,
+    "height": 14,
+    "weight": 884,
+    "base_experience": 172,
+    "base_speed": 110,
+    "base_special_defense": 70,
+    "base_special_attack": 40,
+    "base_defense": 95,
+    "base_attack": 100,
+    "base_hp": 75,
+    "types": [
+      "normal"
+    ],
+    "name": "tauros"
+  },
+  "magikarp": {
+    "number": 129,
+    "height": 9,
+    "weight": 100,
+    "base_experience": 40,
+    "base_speed": 80,
+    "base_special_defense": 20,
+    "base_special_attack": 15,
+    "base_defense": 55,
+    "base_attack": 10,
+    "base_hp": 20,
+    "types": [
+      "water"
+    ],
+    "name": "magikarp"
+  },
+  "gyarados": {
+    "number": 130,
+    "height": 65,
+    "weight": 2350,
+    "base_experience": 189,
+    "base_speed": 81,
+    "base_special_defense": 100,
+    "base_special_attack": 60,
+    "base_defense": 79,
+    "base_attack": 125,
+    "base_hp": 95,
+    "types": [
+      "flying",
+      "water"
+    ],
+    "name": "gyarados"
+  },
+  "lapras": {
+    "number": 131,
+    "height": 25,
+    "weight": 2200,
+    "base_experience": 187,
+    "base_speed": 60,
+    "base_special_defense": 95,
+    "base_special_attack": 85,
+    "base_defense": 80,
+    "base_attack": 85,
+    "base_hp": 130,
+    "types": [
+      "ice",
+      "water"
+    ],
+    "name": "lapras"
+  },
+  "ditto": {
+    "number": 132,
+    "height": 3,
+    "weight": 40,
+    "base_experience": 101,
+    "base_speed": 48,
+    "base_special_defense": 48,
+    "base_special_attack": 48,
+    "base_defense": 48,
+    "base_attack": 48,
+    "base_hp": 48,
+    "types": [
+      "normal"
+    ],
+    "name": "ditto"
+  },
+  "eevee": {
+    "number": 133,
+    "height": 3,
+    "weight": 65,
+    "base_experience": 65,
+    "base_speed": 55,
+    "base_special_defense": 65,
+    "base_special_attack": 45,
+    "base_defense": 50,
+    "base_attack": 55,
+    "base_hp": 55,
+    "types": [
+      "normal"
+    ],
+    "name": "eevee"
+  },
+  "vaporeon": {
+    "number": 134,
+    "height": 10,
+    "weight": 290,
+    "base_experience": 184,
+    "base_speed": 65,
+    "base_special_defense": 95,
+    "base_special_attack": 110,
+    "base_defense": 60,
+    "base_attack": 65,
+    "base_hp": 130,
+    "types": [
+      "water"
+    ],
+    "name": "vaporeon"
+  },
+  "jolteon": {
+    "number": 135,
+    "height": 8,
+    "weight": 245,
+    "base_experience": 184,
+    "base_speed": 130,
+    "base_special_defense": 95,
+    "base_special_attack": 110,
+    "base_defense": 60,
+    "base_attack": 65,
+    "base_hp": 65,
+    "types": [
+      "electric"
+    ],
+    "name": "jolteon"
+  },
+  "flareon": {
+    "number": 136,
+    "height": 9,
+    "weight": 250,
+    "base_experience": 184,
+    "base_speed": 65,
+    "base_special_defense": 110,
+    "base_special_attack": 95,
+    "base_defense": 60,
+    "base_attack": 130,
+    "base_hp": 65,
+    "types": [
+      "fire"
+    ],
+    "name": "flareon"
+  },
+  "porygon": {
+    "number": 137,
+    "height": 8,
+    "weight": 365,
+    "base_experience": 79,
+    "base_speed": 40,
+    "base_special_defense": 75,
+    "base_special_attack": 85,
+    "base_defense": 70,
+    "base_attack": 60,
+    "base_hp": 65,
+    "types": [
+      "normal"
+    ],
+    "name": "porygon"
+  },
+  "omanyte": {
+    "number": 138,
+    "height": 4,
+    "weight": 75,
+    "base_experience": 71,
+    "base_speed": 35,
+    "base_special_defense": 55,
+    "base_special_attack": 90,
+    "base_defense": 100,
+    "base_attack": 40,
+    "base_hp": 35,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "name": "omanyte"
+  },
+  "omastar": {
+    "number": 139,
+    "height": 10,
+    "weight": 350,
+    "base_experience": 173,
+    "base_speed": 55,
+    "base_special_defense": 70,
+    "base_special_attack": 115,
+    "base_defense": 125,
+    "base_attack": 60,
+    "base_hp": 70,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "name": "omastar"
+  },
+  "kabuto": {
+    "number": 140,
+    "height": 5,
+    "weight": 115,
+    "base_experience": 71,
+    "base_speed": 55,
+    "base_special_defense": 45,
+    "base_special_attack": 55,
+    "base_defense": 90,
+    "base_attack": 80,
+    "base_hp": 30,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "name": "kabuto"
+  },
+  "kabutops": {
+    "number": 141,
+    "height": 13,
+    "weight": 405,
+    "base_experience": 173,
+    "base_speed": 80,
+    "base_special_defense": 70,
+    "base_special_attack": 65,
+    "base_defense": 105,
+    "base_attack": 115,
+    "base_hp": 60,
+    "types": [
+      "water",
+      "rock"
+    ],
+    "name": "kabutops"
+  },
+  "aerodactyl": {
+    "number": 142,
+    "height": 18,
+    "weight": 590,
+    "base_experience": 180,
+    "base_speed": 130,
+    "base_special_defense": 75,
+    "base_special_attack": 60,
+    "base_defense": 65,
+    "base_attack": 105,
+    "base_hp": 80,
+    "types": [
+      "flying",
+      "rock"
+    ],
+    "name": "aerodactyl"
+  },
+  "snorlax": {
+    "number": 143,
+    "height": 21,
+    "weight": 4600,
+    "base_experience": 189,
+    "base_speed": 30,
+    "base_special_defense": 110,
+    "base_special_attack": 65,
+    "base_defense": 65,
+    "base_attack": 110,
+    "base_hp": 160,
+    "types": [
+      "normal"
+    ],
+    "name": "snorlax"
+  },
+  "articuno": {
+    "number": 144,
+    "height": 17,
+    "weight": 554,
+    "base_experience": 261,
+    "base_speed": 85,
+    "base_special_defense": 125,
+    "base_special_attack": 95,
+    "base_defense": 100,
+    "base_attack": 85,
+    "base_hp": 90,
+    "types": [
+      "flying",
+      "ice"
+    ],
+    "name": "articuno"
+  },
+  "zapdos": {
+    "number": 145,
+    "height": 16,
+    "weight": 526,
+    "base_experience": 261,
+    "base_speed": 100,
+    "base_special_defense": 90,
+    "base_special_attack": 125,
+    "base_defense": 85,
+    "base_attack": 90,
+    "base_hp": 90,
+    "types": [
+      "flying",
+      "electric"
+    ],
+    "name": "zapdos"
+  },
+  "moltres": {
+    "number": 146,
+    "height": 20,
+    "weight": 600,
+    "base_experience": 261,
+    "base_speed": 90,
+    "base_special_defense": 85,
+    "base_special_attack": 125,
+    "base_defense": 90,
+    "base_attack": 100,
+    "base_hp": 90,
+    "types": [
+      "flying",
+      "fire"
+    ],
+    "name": "moltres"
+  },
+  "dratini": {
+    "number": 147,
+    "height": 18,
+    "weight": 33,
+    "base_experience": 60,
+    "base_speed": 50,
+    "base_special_defense": 50,
+    "base_special_attack": 50,
+    "base_defense": 45,
+    "base_attack": 64,
+    "base_hp": 41,
+    "types": [
+      "dragon"
+    ],
+    "name": "dratini"
+  },
+  "dragonair": {
+    "number": 148,
+    "height": 40,
+    "weight": 165,
+    "base_experience": 147,
+    "base_speed": 70,
+    "base_special_defense": 70,
+    "base_special_attack": 70,
+    "base_defense": 65,
+    "base_attack": 84,
+    "base_hp": 61,
+    "types": [
+      "dragon"
+    ],
+    "name": "dragonair"
+  },
+  "dragonite": {
+    "number": 149,
+    "height": 22,
+    "weight": 2100,
+    "base_experience": 270,
+    "base_speed": 80,
+    "base_special_defense": 100,
+    "base_special_attack": 100,
+    "base_defense": 95,
+    "base_attack": 134,
+    "base_hp": 91,
+    "types": [
+      "flying",
+      "dragon"
+    ],
+    "name": "dragonite"
+  },
+  "mewtwo": {
+    "number": 150,
+    "height": 20,
+    "weight": 1220,
+    "base_experience": 306,
+    "base_speed": 130,
+    "base_special_defense": 90,
+    "base_special_attack": 154,
+    "base_defense": 90,
+    "base_attack": 110,
+    "base_hp": 106,
+    "types": [
+      "psychic"
+    ],
+    "name": "mewtwo"
+  }
+}
