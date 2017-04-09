@@ -235,7 +235,7 @@ function chart(x_var, y_var) {
     let r = corr[x_var][y_var];
 
     svg.append("text")
-      .text(`Pokemon: ${x_string} vs. ${y_string}`)
+      .text(`Pokémon: ${x_string} vs. ${y_string}`)
       .attr("class", "title")
       .attr("text-anchor", "middle")
       .attr("x",width/2-8)

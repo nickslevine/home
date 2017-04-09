@@ -77,7 +77,7 @@ d3.csv("csv/pokemon_correlation_matrix_final.csv", function(error, data){
     .text((d)=>d)
 
   let title = svg.append("text")
-      .text(`Pokemon Correlation Matrix`)
+      .text(`Pokémon Correlation Matrix`)
       .attr("class", "title")
       .attr("text-anchor", "middle")
       .attr("x",width/2-8)
