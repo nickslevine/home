@@ -28,14 +28,14 @@ d3.json("csv/back_wages_by_employer.json", (data)=> {
     .data(data)
   .enter().append("rect")
     .attr("height", (d)=>{
-      if (d.key=="Total, from over 200,000 employers") {
+      if (d.key=="Total, from over 100,000 employers") {
         return 125
       } else {
         return 2.5;
       }
     })
     .attr("width", (d)=>{
-      if (d.key=="Total, from over 200,000 employers") {
+      if (d.key=="Total, from over 100,000 employers") {
         return x(36000000)
       }
       else {
@@ -44,13 +44,13 @@ d3.json("csv/back_wages_by_employer.json", (data)=> {
     })
     .attr("x", 20)
     .attr("y", (d,i)=>{
-      if (d.key=="Total, from over 200,000 employers") {
+      if (d.key=="Total, from over 100,000 employers") {
         return i*25;
       } else {
         return i*25 + 200
       }})
     .style("fill", (d)=>{
-      if (d.key=="Total, from over 200,000 employers") {
+      if (d.key=="Total, from over 100,000 employers") {
         return "white";
       } else {
         return "black";
@@ -83,7 +83,7 @@ for (let i=0; i<50; i++) {
   .enter().append("text")
     .attr("x", 0)
     .attr("y", (d,i)=>{
-      if (d.key=="Total, from over 200,000 employers") {
+      if (d.key=="Total, from over 100,000 employers") {
         return i*25-6;
       } else {
         return i*25 - 6 + 200
@@ -97,14 +97,14 @@ for (let i=0; i<50; i++) {
     .data(data)
   .enter().append("text")
     .attr("x", (d)=> {
-      if (d.key=="Total, from over 200,000 employers") {
+      if (d.key=="Total, from over 100,000 employers") {
        return x(36000000)+25;
       } else {
        return x(d.value)+25;
       }
     })
     .attr("y", (d,i)=>{
-      if (d.key=="Total, from over 200,000 employers") {
+      if (d.key=="Total, from over 100,000 employers") {
         return i*25 + 6;
       } else {
         return i*25 + 6 + 200
@@ -112,7 +112,7 @@ for (let i=0; i<50; i++) {
     .attr("text-anchor", "start")
     .attr("class","wagelabels2")
     .text((d)=> {
-      if (d.key=="Total, from over 200,000 employers") {
+      if (d.key=="Total, from over 100,000 employers") {
         return "$2.6 billion"
       } else if (d.value > 1000000){
       let dollars = (d.value / 1000000).toFixed(0);
