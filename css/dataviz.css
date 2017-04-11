@@ -131,7 +131,7 @@ img {
 .wagelabels2{
     font-family: Arial;
     font-size: 10px;
-    stroke: red;
+    fill: red;
     letter-spacing: 1px;
 }
 .wagecontainer {

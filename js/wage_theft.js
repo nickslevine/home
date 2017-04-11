@@ -57,12 +57,12 @@ d3.json("csv/back_wages_by_employer.json", (data)=> {
       }
     })
 
-for (let i=0; i<50; i++) {
+for (let i=0; i<25; i++) {
       svg.append("rect")
-        .attr("height",2.5)
+        .attr("height",1.25)
         .attr("width", (d)=>x(36000000))
         .attr("x", 20)
-        .attr("y", (n)=>i*4)
+        .attr("y", (n)=>i*8)
         .style("fill", "black")  
 }
     // .on("mouseover", function(d) {
