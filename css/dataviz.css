@@ -122,3 +122,36 @@ img {
     justify-content: center;
     line-height: 12px;
 }
+.wagelabels{
+    font-family: Arial;
+    font-size: 10px;
+    color: black;
+    letter-spacing: 1px;
+}
+.wagelabels2{
+    font-family: Arial;
+    font-size: 10px;
+    stroke: red;
+    letter-spacing: 1px;
+}
+.wagecontainer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 100%
+}
+
+.wagetitle {
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.wagesubtitle {
+    font-family: Arial;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 2px;
+}
