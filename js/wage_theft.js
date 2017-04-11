@@ -10,7 +10,7 @@ d3.json("csv/back_wages_by_employer.json", (data)=> {
     height = 25300 - margin.top - margin.bottom;
 
   var x = d3.scaleLinear().range([0, width]);
-  x.domain([0, d3.max(data, (d) => d.value)]);
+  x.domain([0, 36000000]);
 
 
   var svg = d3.select(".wagecontainer").append("svg")
@@ -27,11 +27,44 @@ d3.json("csv/back_wages_by_employer.json", (data)=> {
   svg.selectAll(".wagetheft")
     .data(data)
   .enter().append("rect")
-    .attr("height", 5)
-    .attr("width", (d)=>x(d.value))
+    .attr("height", (d)=>{
+      if (d.key=="Total, from over 200,000 employers") {
+        return 125
+      } else {
+        return 2.5;
+      }
+    })
+    .attr("width", (d)=>{
+      if (d.key=="Total, from over 200,000 employers") {
+        return x(36000000)
+      }
+      else {
+        return x(d.value);
+      }
+    })
     .attr("x", 20)
-    .attr("y", (d,i)=>i*25)
-    .style("fill","black")
+    .attr("y", (d,i)=>{
+      if (d.key=="Total, from over 200,000 employers") {
+        return i*25;
+      } else {
+        return i*25 + 200
+      }})
+    .style("fill", (d)=>{
+      if (d.key=="Total, from over 200,000 employers") {
+        return "white";
+      } else {
+        return "black";
+      }
+    })
+
+for (let i=0; i<50; i++) {
+      svg.append("rect")
+        .attr("height",2.5)
+        .attr("width", (d)=>x(36000000))
+        .attr("x", 20)
+        .attr("y", (n)=>i*4)
+        .style("fill", "black")  
+}
     // .on("mouseover", function(d) {
     //   tool.transition()
     //       .duration(0)
@@ -49,7 +82,12 @@ d3.json("csv/back_wages_by_employer.json", (data)=> {
     .data(data)
   .enter().append("text")
     .attr("x", 0)
-    .attr("y", (d,i)=>i*25-6)
+    .attr("y", (d,i)=>{
+      if (d.key=="Total, from over 200,000 employers") {
+        return i*25-6;
+      } else {
+        return i*25 - 6 + 200
+      }})
     .style("fill","black")
     .attr("text-anchor", "start")
     .attr("class","wagelabels")
@@ -58,12 +96,25 @@ d3.json("csv/back_wages_by_employer.json", (data)=> {
   svg.selectAll(".backwages")
     .data(data)
   .enter().append("text")
-    .attr("x", (d)=>x(d.value)+25)
-    .attr("y", (d,i)=>i*25+6)
+    .attr("x", (d)=> {
+      if (d.key=="Total, from over 200,000 employers") {
+       return x(36000000)+25;
+      } else {
+       return x(d.value)+25;
+      }
+    })
+    .attr("y", (d,i)=>{
+      if (d.key=="Total, from over 200,000 employers") {
+        return i*25 + 6;
+      } else {
+        return i*25 + 6 + 200
+      }})
     .attr("text-anchor", "start")
     .attr("class","wagelabels2")
     .text((d)=> {
-      if (d.value > 1000000){
+      if (d.key=="Total, from over 200,000 employers") {
+        return "$2.6 billion"
+      } else if (d.value > 1000000){
       let dollars = (d.value / 1000000).toFixed(0);
       return `$${dollars} million`
     }
@@ -84,13 +135,14 @@ d3.json("csv/back_wages_by_employer.json", (data)=> {
       .attr("class", "wagesubtitle")
       .attr("text-anchor", "middle")
       .attr("x",width/2-8)
-      .attr("y", -40-70);
+      .attr("y", -40-60);
+
     svg.append("text")
-      .text(`—Top 1000—`)
+      .text(`(Total + top 1000 offenders)`)
       .attr("class", "wagesubtitle")
       .attr("text-anchor", "middle")
       .attr("x",width/2-8)
-      .attr("y", -40-50);
+      .attr("y", -40-40);
 })
 
 
