@@ -5,7 +5,7 @@ const print = (s) => console.log(s);
 d3.json("csv/back_wages_by_employer.json", (data)=> {
   print(data);
 
-  var margin = {top: 200, right: 100, bottom: 0, left: 100},
+  var margin = {top: 150, right: 100, bottom: 0, left: 100},
     width = 960 - margin.left - margin.right,
     height = 25300 - margin.top - margin.bottom;
 
@@ -128,21 +128,21 @@ for (let i=0; i<25; i++) {
       .attr("class", "wagetitle")
       .attr("text-anchor", "middle")
       .attr("x",width/2-8)
-      .attr("y", -60-70);
+      .attr("y", -60-70+20);
 
     svg.append("text")
       .text(`Back wages recovered by the Department of Labor, 2005-2017`)
       .attr("class", "wagesubtitle")
       .attr("text-anchor", "middle")
       .attr("x",width/2-8)
-      .attr("y", -40-60);
+      .attr("y", -40-60+20);
 
     svg.append("text")
       .text(`(Total + top 1000 offenders)`)
       .attr("class", "wagesubtitle")
       .attr("text-anchor", "middle")
       .attr("x",width/2-8)
-      .attr("y", -40-40);
+      .attr("y", -40-40+20);
 })
 
 
