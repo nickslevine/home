@@ -155,3 +155,26 @@ img {
     color: black;
     letter-spacing: 2px;
 }
+
+.tooltip_map {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    /*height: 60px;*/
+    /*padding-bottom: 0px;
+    padding-top: 0px;*/
+    font: 12px Arial;
+    background: white;
+    border: 1px solid black;
+    border-radius: 0px;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: cener;
+    justify-content: center;
+    line-height: 18px;
+}
