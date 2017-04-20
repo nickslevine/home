@@ -45,14 +45,27 @@ let chart = () => {
   if (zip.length==5) {
   document.getElementById("zip_input").value = "";
   d3.json("../csv/wage_theft_local.json", (data) => {
+    
   let lng = projection([data[zip].lng, data[zip].lat])[0];
   let lat = projection([data[zip].lng, data[zip].lat])[1];
 
   map.append("circle")
+    .datum(zip)
     .attr("cx", lng)
     .attr("cy", lat)
     .attr("r", 8)
     .style("fill", "#DE6449")
+    .on("click", (d) => {
+      body_text =  "<br><span style='font: 16px Arial !important; font-weight:900'>" + d + " (" + data[d].city + ", " + data[d].state + ")</span>"
+      body_text += "Back wages recovered by the Department of Labor, 2005-2017<br>"
+      for (let f of data[d].firms) {
+        body_text += "<br><b>" + f.key + "</b>$" + d3.format(",")(f.value.toFixed(0));
+      }
+      info.transition()
+          .duration(100)
+          .style("opacity", .9);
+      info.html(body_text)
+    })
 
   body_text =  "<br><span style='font: 16px Arial !important; font-weight:900'>" + zip + " (" + data[zip].city + ", " + data[zip].state + ")</span>"
   body_text += "Back wages recovered by the Department of Labor, 2005-2017<br>"
