@@ -64,21 +64,19 @@ let state_names = {
 
 let margin = {top: 50, right: 0, bottom: 0, left: 0},
   width = 950 - margin.left - margin.right,
-  height = 700 - margin.top - margin.bottom;
+  height = 600 - margin.top - margin.bottom;
 
 let x = d3.scaleLinear().range([0, width]);
 let y = d3.scaleLinear().range([height, 0]);
 
-let svg = d3.select(".container").append("svg")
+let svg = d3.select(".chartdiv").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-let info = d3.select("body").append("div")
-    .attr("class", "state_info")
-    .style("opacity", 0);
+let info = d3.select(".zip_info")
 
 let tool = d3.select("body").append("div")
     .attr("class", "tooltip_states")

@@ -3,11 +3,11 @@ let handleKeys = () => {
   else {document.getElementById('zip_input').focus();}
 }
 
-let margin = {top: 50, right: 0, bottom: 0, left: 0},
+let margin = {top: 0, right: 0, bottom: 0, left: 0},
   width = 950 - margin.left - margin.right,
-  height = 700 - margin.top - margin.bottom;
+  height = 500 - margin.top - margin.bottom;
 
-let svg = d3.select(".container").append("svg")
+let svg = d3.select(".chartdiv").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -16,10 +16,6 @@ let svg = d3.select(".container").append("svg")
 
 let tool = d3.select("body").append("div")
     .attr("class", "tooltip_states")
-    .style("opacity", 0);
-
-let info = d3.select("body").append("div")
-    .attr("class", "state_info")
     .style("opacity", 0);
 
 let map = svg.append("g");
@@ -40,20 +36,9 @@ d3.json("../csv/us-states.json", (USA) => {
     .style("stroke", "#fff")
     .style("stroke-width", "2")
 
-  svg.append("text")
-    .text(`Wage Theft Local`)
-    .attr("class", "wagetitle")
-    .attr("text-anchor", "middle")
-    .attr("x",width/2)
-    .attr("y", 0);
-  svg.append("text")
-    .text(`Enter your zip code:`)
-    .attr("class", "wagesubtitle")
-    .attr("text-anchor", "middle")
-    .attr("x",width/2)
-    .attr("y", 30);
-
  })
+
+let info = d3.select(".zip_info")
 
 let chart = () => {
   let zip = document.getElementById("zip_input").value;
